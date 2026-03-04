@@ -1,0 +1,75 @@
+/* colour palette variables */
+
+:root {
+    --colour-bg: #1a1a2e;
+    --colour-card: #16213e;
+    --colour-accent: #4fc3f7;
+    --colour-text: #ffffff;
+    --colour-text-muted: #aaaaaa;
+}
+
+/* reset strips browser default spacing so start with a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* make body a flex box container */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colour-bg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colour-card);
+    border-radius: 25px;
+    border: 1px solid var(--colour-accent);
+    padding: 25px;
+    max-width: 500px;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h1 {
+    color: var(--colour-text);
+    padding: 10px;
+}
+
+.card h3 {
+    color: var(--colour-text-muted);
+    padding: 10px;
+    padding-bottom:50px;
+    font-weight: 100;
+}
+
+.card li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card li i {
+    color: var(--colour-text-muted);
+    font-size: 24px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.card li i:hover {
+    color: var(--colour-accent);
+    font-size: 26px;
+}
